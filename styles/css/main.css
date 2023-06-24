@@ -1,0 +1,329 @@
+@import url(../vendor/framework.css);
+@import url("https://fonts.googleapis.com/css?family=Bangers");
+/* line 15, ../sass/main.scss */
+.loading {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../../img/dc.gif) center no-repeat #fff;
+}
+
+/* line 26, ../sass/main.scss */
+.back {
+  background-color: white;
+  background-image: url("../../img/background_0.svg");
+  height: 100%;
+  /*mix-blend-mode: luminosity;*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100vh;
+}
+
+/* line 39, ../sass/main.scss */
+.front {
+  height: auto;
+  background-image: url("../../img/background_1.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 48, ../sass/main.scss */
+.center-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 53, ../sass/main.scss */
+.selection {
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+}
+
+/* line 58, ../sass/main.scss */
+.selection-heading h1 {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  color: #d00a09;
+  background-color: rgba(0, 0, 0, 0.87);
+  font-family: "Bangers", cursive;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* line 72, ../sass/main.scss */
+.image-wrap {
+  margin-top: 0;
+  display: flex;
+  justify-content: flex-start;
+  width: inherit;
+  height: inherit;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* line 82, ../sass/main.scss */
+.image-wrap img:hover {
+  -ms-transform: matrix(1, -0.3, 0, 1, 0, 0) scaleX(-1);
+  -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0) scaleX(-1);
+  transform: matrix(1, -0.3, 0, 1, 0, 0) scaleX(-1);
+}
+/* line 88, ../sass/main.scss */
+.image-wrap a:link, .image-wrap a:visited {
+  opacity: 0.92;
+}
+/* line 92, ../sass/main.scss */
+.image-wrap a:hover, .image-wrap a:active {
+  opacity: 1;
+}
+
+/* line 98, ../sass/main.scss */
+.move a:hover, .move a:active {
+  margin-right: -5%;
+}
+
+/* line 104, ../sass/main.scss */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/* line 117, ../sass/main.scss */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* line 125, ../sass/main.scss */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* line 134, ../sass/main.scss */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* line 138, ../sass/main.scss */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  /* line 146, ../sass/main.scss */
+  .overlay a {
+    font-size: 20px;
+  }
+
+  /* line 150, ../sass/main.scss */
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/* line 158, ../sass/main.scss */
+.wonder_woman::before {
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  content: "";
+  background: url("../../img/wonder_woman.png") no-repeat 0 0;
+  background-size: 100%;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* line 184, ../sass/main.scss */
+.batman::before {
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  content: "";
+  background: url("../../img/batman.png") no-repeat 0 0;
+  background-size: 100%;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* line 210, ../sass/main.scss */
+.green_lantern::before {
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  content: "";
+  background: url("../../img/green_lantern.jpg") no-repeat 0 0;
+  background-size: 100%;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* line 236, ../sass/main.scss */
+.flash::before {
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  content: "";
+  background: url("../../img/flash.png") no-repeat 0 0;
+  background-size: 100%;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* line 262, ../sass/main.scss */
+.black_lightning::before {
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  content: "";
+  background: url("../../img/black_lightning.png") no-repeat 0 0;
+  background-size: 100%;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
